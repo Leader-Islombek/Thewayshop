@@ -21,7 +21,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jazzmin',
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     # local apps
 
     'home',
+    'userauths'
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,5 @@ JAZZMIN_SETTINGS = {
     'site_logo': "/images/logo.png",  
     'copyright': "Theyway shop"
 }
+
+AUTH_USER_MODEL = 'userauths.User'
